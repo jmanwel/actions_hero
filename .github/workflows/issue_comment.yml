@@ -30,7 +30,7 @@ jobs:
             -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
             -H "X-GitHub-Api-Version: 2022-11-28" \
             https://api.github.com/repos/${OWNER}/${REPO}/issues/${ISSUE_NUMBER} \
-            -d '{"title":"Found a bug","body":"Having a problem with this.","assignees":${OWNER},"milestone":1,"state":"open","labels":["bug"]}'
+            -d '{"title":"Found a bug","body":"Having a problem with this.","milestone":1,"state":"open","labels":["bug"]}'
         env:
           OWNER: ${{ github.repository_owner }}
           REPO: ${{ github.event.repository.name }}
