@@ -1,7 +1,7 @@
 name: Create a comment on new issues
 on:
-  pull_request_target:
-    types: [assigned, opened, synchronize, reopened]
+  issues:
+    types: [opened]
 jobs:
   comment-with-actions:
     runs-on: ubuntu-latest
