@@ -1,4 +1,3 @@
-import assert from 'node:assert/strict';
-
-assert.equal(1, 1);
+var assert = require('assert');
+assert(1==1);
   
