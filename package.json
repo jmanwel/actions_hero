@@ -2,6 +2,6 @@
   "name": "simple",
   "main": "app.js",
   "scripts": {
-    "test": node --test
+    "test": "node --test"
   }
 }
